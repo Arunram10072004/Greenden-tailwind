@@ -11,8 +11,8 @@
 
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden md:p-7">
+        <svg  id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden md:p-7 cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -32,15 +32,38 @@
         </ul>
     </nav>
 
+     <!-- side-navbar -->
+
+    <section id="sectionnav" class="bg-green-100 fixed top-0 z-20 right-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right:-50%">
+        <div id="closeicon" class="text-right p-5">
+            <p class="cursor-pointer ">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="product..html">Product</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+
     <!-- our product -->
     <section class="text-center text-3xl m-3 p-2">
         <h1 class="font-bold ">Our Product</h1>
-        <input type="text" placeholder= "" class=" border border-black m-3" style="width: 80%;">
+        <input id="search" type="text" placeholder= "" class=" border border-black m-3" style="width: 80%;">
 
     </section>
          <section class="p-4 text-center">
 
-        <div class="grid grid-cols-2 p-4 gap-5 md:grid-cols-4">
+        <div id="container" class="grid grid-cols-2 p-4 gap-5 md:grid-cols-4">
             <div>
                 <img src="./images/best_1.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>violet Flower</h1>
@@ -97,6 +120,8 @@
         <p class="mb-2 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, accusantium!</p>
         <p>&copy; 2021 Greenday.com</p>
     </section>
+
+   <script src="./product.js"></script>
     
 </body>
 </html>
